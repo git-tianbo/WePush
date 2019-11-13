@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test.StudentMapperTest" time="1.926" tests="5" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="E:\IdeaWorkspace\springmybatis\target\test-classes;E:\IdeaWorkspace\springmybatis\target\classes;E:\Maven-Repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;E:\Maven-Repository\junit\junit\4.12\junit-4.12.jar;E:\Maven-Repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\Maven-Repository\org\springframework\spring-core\4.3.2.RELEASE\spring-core-4.3.2.RELEASE.jar;E:\Maven-Repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;E:\Maven-Repository\org\springframework\spring-context\4.3.2.RELEASE\spring-context-4.3.2.RELEASE.jar;E:\Maven-Repository\org\springframework\spring-aop\4.3.2.RELEASE\spring-aop-4.3.2.RELEASE.jar;E:\Maven-Repository\org\springframework\spring-expression\4.3.2.RELEASE\spring-expression-4.3.2.RELEASE.jar;E:\Maven-Repository\org\springframework\spring-test\4.3.2.RELEASE\spring-test-4.3.2.RELEASE.jar;E:\Maven-Repository\org\springframework\spring-tx\4.3.2.RELEASE\spring-tx-4.3.2.RELEASE.jar;E:\Maven-Repository\org\springframework\spring-beans\4.3.2.RELEASE\spring-beans-4.3.2.RELEASE.jar;E:\Maven-Repository\org\springframework\spring-jdbc\4.3.2.RELEASE\spring-jdbc-4.3.2.RELEASE.jar;E:\Maven-Repository\org\mybatis\mybatis\3.2.8\mybatis-3.2.8.jar;E:\Maven-Repository\org\mybatis\mybatis-spring\1.3.0\mybatis-spring-1.3.0.jar;E:\Maven-Repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="E:\JDK\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\30252\AppData\Local\Temp\surefire6131868369705376839\surefirebooter1456245562379531168.jar C:\Users\30252\AppData\Local\Temp\surefire6131868369705376839 2019-11-09T00-09-15_028-jvmRun1 surefire1320154100035851675tmp surefire_05306781802003481797tmp"/>
+    <property name="surefire.test.class.path" value="E:\IdeaWorkspace\springmybatis\target\test-classes;E:\IdeaWorkspace\springmybatis\target\classes;E:\Maven-Repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;E:\Maven-Repository\junit\junit\4.12\junit-4.12.jar;E:\Maven-Repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\Maven-Repository\org\springframework\spring-core\4.3.2.RELEASE\spring-core-4.3.2.RELEASE.jar;E:\Maven-Repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;E:\Maven-Repository\org\springframework\spring-context\4.3.2.RELEASE\spring-context-4.3.2.RELEASE.jar;E:\Maven-Repository\org\springframework\spring-aop\4.3.2.RELEASE\spring-aop-4.3.2.RELEASE.jar;E:\Maven-Repository\org\springframework\spring-expression\4.3.2.RELEASE\spring-expression-4.3.2.RELEASE.jar;E:\Maven-Repository\org\springframework\spring-test\4.3.2.RELEASE\spring-test-4.3.2.RELEASE.jar;E:\Maven-Repository\org\springframework\spring-tx\4.3.2.RELEASE\spring-tx-4.3.2.RELEASE.jar;E:\Maven-Repository\org\springframework\spring-beans\4.3.2.RELEASE\spring-beans-4.3.2.RELEASE.jar;E:\Maven-Repository\org\springframework\spring-jdbc\4.3.2.RELEASE\spring-jdbc-4.3.2.RELEASE.jar;E:\Maven-Repository\org\mybatis\mybatis\3.2.8\mybatis-3.2.8.jar;E:\Maven-Repository\org\mybatis\mybatis-spring\1.3.0\mybatis-spring-1.3.0.jar;E:\Maven-Repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\30252"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="E:\JDK\jre"/>
+    <property name="basedir" value="E:\IdeaWorkspace\springmybatis"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\30252\AppData\Local\Temp\surefire6131868369705376839\surefirebooter1456245562379531168.jar"/>
+    <property name="sun.boot.class.path" value="E:\JDK\jre\lib\resources.jar;E:\JDK\jre\lib\rt.jar;E:\JDK\jre\lib\sunrsasign.jar;E:\JDK\jre\lib\jsse.jar;E:\JDK\jre\lib\jce.jar;E:\JDK\jre\lib\charsets.jar;E:\JDK\jre\lib\jfr.jar;E:\JDK\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_221-b11"/>
+    <property name="user.name" value="30252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="E:\JDK\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="E:\Maven-Repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\30252\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_221"/>
+    <property name="user.dir" value="E:\IdeaWorkspace\springmybatis"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="E:\JDK\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\xftp\;E:\Xshell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;E:\MySQL\bin;E:\Mavern\apache-maven-3.6.2\bin;C:\Users\30252\AppData\Local\Microsoft\WindowsApps;E:\JDK\bin;E:\JDK\jre\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.221-b11"/>
+    <property name="java.ext.dirs" value="E:\JDK\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="deleteStudentId" classname="test.StudentMapperTest" time="0.554"/>
+  <testcase name="selectStudent" classname="test.StudentMapperTest" time="0.186"/>
+  <testcase name="updateStudent" classname="test.StudentMapperTest" time="0.106"/>
+  <testcase name="selectStudentId" classname="test.StudentMapperTest" time="0.129"/>
+  <testcase name="insertStudent" classname="test.StudentMapperTest" time="0.142">
+    <error message="&#10;### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;51121&apos; for key &apos;stunum&apos;&#10;### The error may involve test.StudentMapper.insertStudent-Inline&#10;### The error occurred while setting parameters&#10;### SQL: insert  into bj (id,name,qq,type,time,stunum) values (?,?,?,?,?,?)&#10;### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;51121&apos; for key &apos;stunum&apos;&#10;; SQL []; Duplicate entry &apos;51121&apos; for key &apos;stunum&apos;; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry &apos;51121&apos; for key &apos;stunum&apos;" type="org.springframework.dao.DuplicateKeyException">org.springframework.dao.DuplicateKeyException: 
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '51121' for key 'stunum'
+### The error may involve test.StudentMapper.insertStudent-Inline
+### The error occurred while setting parameters
+### SQL: insert  into bj (id,name,qq,type,time,stunum) values (?,?,?,?,?,?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '51121' for key 'stunum'
+; SQL []; Duplicate entry '51121' for key 'stunum'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '51121' for key 'stunum'
+	at test.StudentMapperTest.insertStudent(StudentMapperTest.java:49)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '51121' for key 'stunum'
+	at test.StudentMapperTest.insertStudent(StudentMapperTest.java:49)
+</error>
+    <system-out><![CDATA[[DEBUG] 2019-11-09 00:09:18,241 method:org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)
+Property `configuration` or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-09 00:09:18,249 method:org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)
+Parsed mapper file: 'URL [file:/E:/IdeaWorkspace/springmybatis/target/classes/StudentMapper.xml]'
+[DEBUG] 2019-11-09 00:09:18,260 method:org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)
+Creating a new SqlSession
+[DEBUG] 2019-11-09 00:09:18,260 method:org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74e28667] was not registered for synchronization because synchronization is not active
+[DEBUG] 2019-11-09 00:09:18,266 method:org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)
+JDBC Connection [com.mysql.jdbc.JDBC4Connection@795509d9] will not be managed by Spring
+[DEBUG] 2019-11-09 00:09:18,267 method:org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)
+==>  Preparing: insert into bj (id,name,qq,type,time,stunum) values (?,?,?,?,?,?) 
+[DEBUG] 2019-11-09 00:09:18,269 method:org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)
+==> Parameters: 18(Integer), 张搜索(String), 88452(Integer), 前端(String), 2015年3月3日(String), 51121(Integer)
+[DEBUG] 2019-11-09 00:09:18,364 method:org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl.debug(JakartaCommonsLoggingImpl.java:49)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74e28667]
+]]></system-out>
+  </testcase>
+</testsuite>

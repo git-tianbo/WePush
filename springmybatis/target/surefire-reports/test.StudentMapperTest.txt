@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: test.StudentMapperTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.926 s <<< FAILURE! - in test.StudentMapperTest
+insertStudent(test.StudentMapperTest)  Time elapsed: 0.142 s  <<< ERROR!
+org.springframework.dao.DuplicateKeyException: 
+
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '51121' for key 'stunum'
+### The error may involve test.StudentMapper.insertStudent-Inline
+### The error occurred while setting parameters
+### SQL: insert  into bj (id,name,qq,type,time,stunum) values (?,?,?,?,?,?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '51121' for key 'stunum'
+; SQL []; Duplicate entry '51121' for key 'stunum'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '51121' for key 'stunum'
+	at test.StudentMapperTest.insertStudent(StudentMapperTest.java:49)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '51121' for key 'stunum'
+	at test.StudentMapperTest.insertStudent(StudentMapperTest.java:49)
+

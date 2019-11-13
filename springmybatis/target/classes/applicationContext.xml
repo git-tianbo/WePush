@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+    <context:component-scan base-package="com.ptteng"/>
+
+    <!--数据源配置-->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="username" value="root"></property>
+        <property name="password" value="451976"></property>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/student?serverTimezone=UTC"></property>
+    </bean>
+
+    <!--mybatis与spring的整合，不需要mybatis自己的配置映射文件-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--配置连接数据库数据源-->
+        <property name="dataSource" ref="dataSource"></property>
+
+        <!-- 当mybatis的xml文件和mappere接口不在相同包下时，需要用mapperLocations属性指定xml文件的路径。
+        *是个通配符，代表所有的文件，**代表所有目录下 -->
+        <property name="mapperLocations" value="classpath*:StudentMapper.xml"></property>
+    </bean>
+
+    <!--    bean工厂-->
+    <bean id="mapperFactoryBean"  class="org.mybatis.spring.mapper.MapperFactoryBean">
+
+        <!--        mapperInterface指定接口-->
+        <!--        将接口和映射文件整合在一起-->
+        <property name="mapperInterface" value="mapper.StudentMapper"></property>
+
+        <!--        配置sqlSessionFactory-->
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
+
+    </bean>
+
+    <bean id="student" class="com.ptteng.enity.Student"></bean>
+</beans>

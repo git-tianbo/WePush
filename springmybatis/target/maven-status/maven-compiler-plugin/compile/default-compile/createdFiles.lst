@@ -1,0 +1,4 @@
+test\StudentMapper.class
+com\ptteng\impl\StudentImpl.class
+com\ptteng\enity\Student.class
+com\ptteng\mainn.class
