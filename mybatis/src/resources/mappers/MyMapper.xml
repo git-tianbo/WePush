@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--    Mapper namespace属性 区分不同表中查询的sql语句的名字冲突-->
+<!--    比如 A表 findById   B表 findById名 字冲突不识别，所以给不同的表的数据源添加一个前缀，对应的是namespace属性-->
+<mapper namespace="mapper.MyMapper">
+
+<!--    id给当前的sql语句起一个识别id，最好和接口一致
+        parameterType  限制传入参数类型-->
+<!--    resultType结果集封装的类型，只有查询才能用到
+        #{id}占位符里面的名字任意-->
+
+<!--    //查找单个   传入类型必须为包装型Integer-->
+    <select id="selectStudentId"  parameterType="java.lang.Integer" resultType="enity.Student">
+      select * from bj where Stunum = #{id}
+   </select>
+<!--    //查找全部   输出类型必须为user定义类-->
+    <select id ="selectStudent"    resultType="enity.Student">
+      select * from bj
+    </select>
+
+<!--    //插入单个   传入类型必须为包装型user定义类-->
+    <insert id="insertStudent"    parameterType="enity.Student">
+     insert  into bj (name,qq,type,time,stunum) values (#{name},#{qq},#{type},#{time},#{stunum})
+    </insert>
+
+<!--    //删除单个   传入类型必须为包装型user定义类-->
+    <delete id="deleteStudentStunum"   parameterType="enity.Student" >
+    delete from  bj where stunum = #{stunum}
+    </delete>
+
+<!--    //更改单个    传入类型必须为包装型user定义类-->
+    <update id="updateStudent"  parameterType="enity.Student" >
+    update bj set name = #{name} where id = #{id}
+    </update>
+
+        <!--    MyMapper.xml名字可以更改，位置任意-->
+        <!--    命名建议 StudentMapper.xml(mybatis)-->
+        <!--    建议命名为：类名+Mapper.xml-->
+</mapper>
