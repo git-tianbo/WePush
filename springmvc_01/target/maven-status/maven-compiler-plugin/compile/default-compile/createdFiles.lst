@@ -1,0 +1,5 @@
+model\Student.class
+controller\CrudController.class
+mapper\StudentMapper.class
+service\StudentService.class
+dao\StudentDao.class
